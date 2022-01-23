@@ -4,10 +4,43 @@
     <title>다메모(Damemo)</title>
     <meta charset="UTF-8" />
     <link rel="stylesheet" href="index.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Hi+Melody&display=swap" rel="stylesheet">
   </head>
-
   <body>
-    <button>Give me color</button>
+    <!-- 로그인 전 -->
+    <section class="beLogin hidden">
+        <div class="container">
+            <div class="title">
+                <h1>DAily MEMO</h1>
+            </div>
+            <div class="ele">
+                <div class="clock"></div>
+                <div class="weather">
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+            <div>
+                <form id="login-form">
+                    <p>메모장 주인</p>
+                    <input id="userName" required maxlength="15" type="text" placeholder="이름을 적어주세요."/>
+                    <div class="wrap"><input id="submit" type="submit" value="이름적기"/></div>
+                </form>
+            </div>
+        </div>
+    </section>
+    <!-- 로그인 후  -->
+    <section class="afLogin hidden">
+        <div class="left">
+            <form id="todo-form">
+                <input type="text" placeholder="할일을 적어주세요." required/>
+            </form>
+            <ul id="todo-list"></ul>
+        </div>
+    </section>
+
     <script src="index.js"></script>
   </body>
 </html>

@@ -1,0 +1,95 @@
+body{
+    font-family: 'Hi Melody', cursive;
+}
+.hidden{
+    display: none !important;
+}
+
+.beLogin{
+    position: absolute;
+    top: 30%;
+    transform: translateY(-30%);
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(252, 252, 252, 0.6);
+    padding: 50px 100px;
+    border-radius: 5%;
+    box-shadow: 20px 20px 20px grey;
+}
+
+.title h1{
+    margin: 0;
+    font-size: 26px;
+    text-align: center;
+}
+
+.clock{
+    margin-top: 18px;
+    font-size: 70px;
+    text-align: center;
+}
+
+#login-form p{
+    font-size: 18px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+#login-form #userName{
+    border: 0;
+    border-bottom: 1px solid gray;
+    font-size: 18px;
+    background-color: transparent;
+    margin-bottom: 10px;
+    text-align: center;
+}
+.weather{
+    text-align: center;
+    font-size: 18px;
+}
+.weather span:first-child::after{
+    content: "/";
+}
+.wrap{
+    margin: 0 auto;
+    text-align: center;
+}
+#login-form #submit{
+    font-size: 18px;
+}
+.afLogin{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 100px;
+}
+
+.left{
+    width: 60%;
+    padding: 50px;
+    background-color: rgba(252, 252, 252, 0.6);
+}
+
+#todo-form{
+    width: 100%;
+}
+#todo-form input{
+    width: 95%;
+    border: 0;
+    font-size: 18px;
+    padding: 10px;
+    text-align: center;
+}
+
+#todo-list{
+    list-style:circle;
+    padding-left: 20px;
+}
+
+#todo-list li{
+    padding-left: 10px;
+    font-size:24px;
+}
+#todo-list li button{
+    border: 0;
+    background-color: transparent;
+    margin-left: 20px;
+}
